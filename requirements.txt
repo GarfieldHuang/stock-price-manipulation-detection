@@ -1,0 +1,7 @@
+pandas
+scipy
+fastparquet
+pytorch
+hyperopt
+numpy
+scikit-learn
