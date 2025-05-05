@@ -30,33 +30,33 @@ This repository contains 5 folders: data, models, preprocessing, scoring, and tr
 
 -train folder: contains the utilities used to train the models.
 
-## Data
-The raw L1 LOBSTER data files, available at: https://lobsterdata.com/info/DataSamples.php, are compressed in the data.zip file. You need to extract this file to create the /data folder and access the dataset.
+## 資料
+原始的 L1 LOBSTER 資料檔案（可於 https://lobsterdata.com/info/DataSamples.php 取得）已壓縮在 data.zip 檔案中。您需要解壓縮此檔案以建立 /data 資料夾並存取資料集。
 
-## Data Extraction
-To extract the data files, please follow these steps:
+## 資料解壓縮
+若要解壓縮資料檔案，請依照以下步驟操作：
 
-1. **Extract data.zip to create the data folder**:
-   - For Windows: Right-click on data.zip and select "Extract All", or use PowerShell: `Expand-Archive -Path data.zip -DestinationPath .`
-   - For Linux/macOS: `unzip data.zip`
+1. **解壓縮 data.zip 以建立 data 資料夾**：
+   - Windows：右鍵點擊 data.zip 並選擇「解壓縮全部」，或使用 PowerShell：`Expand-Archive -Path data.zip -DestinationPath .`
+   - Linux/macOS：`unzip data.zip`
 
-## Large Files Handling
-This repository uses Git Large File Storage (Git LFS) to manage large files such as data.zip. To properly clone and work with this repository, please follow these steps:
+## 大型檔案處理
+本專案使用 Git Large File Storage (Git LFS) 來管理大型檔案，如 data.zip。要正確複製和使用此儲存庫，請按照以下步驟操作：
 
-1. **Install Git LFS**:
-   - For Windows: `git lfs install`
-   - For Linux/macOS: `git lfs install` (after installing Git LFS via package manager)
+1. **安裝 Git LFS**：
+   - Windows： `git lfs install`
+   - Linux/macOS： `git lfs install`（需先通過套件管理器安裝 Git LFS）
 
-2. **Cloning the Repository**:
+2. **複製儲存庫**：
    ```
    git clone https://github.com/GarfieldHuang/stock-price-manipulation-detection.git
    cd stock-price-manipulation-detection
    git lfs pull
    ```
 
-3. **After Cloning**:
-   - Extract the data.zip file as described in the Data Extraction section
-   - CSV and parquet files are tracked by Git LFS and can be used directly
-   - No need to decompress any files
+3. **複製後操作**：
+   - 按照「資料解壓縮」部分的說明解壓縮 data.zip 檔案
+   - 所有必要的資料已包含在 data.zip 中
+   - 解壓縮後即可開始使用
 
 
